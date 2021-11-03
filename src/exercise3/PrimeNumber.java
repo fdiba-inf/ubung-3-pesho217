@@ -18,6 +18,6 @@ public class PrimeNumber {
       }
       a++;
     }
-    System.out.println("Prime number : " + prime);
+    System.out.println("Prime number: " + prime);
   }
 }
