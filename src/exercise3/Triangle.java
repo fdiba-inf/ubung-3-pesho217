@@ -18,7 +18,7 @@ public class Triangle {
         p = (a + b +c)/2;
         S = Math.sqrt(p*(p - a)*(p - b)*(p - c));
         System.out.println("Area: " + S);
-        if (a == b || a == c || b == c ) {
+        if (a == b && a != c ) {
           System.out.println("Triangle: isosceles");
           break;
         } else if (a == b && c == b && a == c) {
@@ -29,7 +29,7 @@ public class Triangle {
           break;
         } 
         } else {
-          System.out.println("Values are not correct");
+          System.out.println("Values are not correct!");
           break;
       } 
     } while ( a > 0 && b > 0 && c > 0);

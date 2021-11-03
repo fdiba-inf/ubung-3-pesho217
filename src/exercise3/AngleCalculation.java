@@ -15,11 +15,12 @@ public class AngleCalculation {
 
     do {
       if ( ch == 'r' ) {
-        radiant = (winkel*Math.PI)/180;
-        System.out.println("Angle: " + radiant + ch);
-      } else {
         grad = (winkel*180)/Math.PI;
-        System.out.println("Angle: " + grad + ch);
+        System.out.println("Angle: " + grad );
+        
+      } else {
+        radiant = (winkel*Math.PI)/180;
+        System.out.println("Angle: " + radiant );
 
 
       } 
