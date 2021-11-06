@@ -7,13 +7,16 @@ public class Triangle {
   public static void main(String []args) {
     Scanner input = new Scanner(System.in);
 
-    int a = input.nextInt();
-    int b = input.nextInt();
-    int c = input.nextInt();
-    double p;
-    double S;
+    int a;
+    int b;
+    int c;
+    double p = 0.0;
+    double S = 0.0;
 
     do {
+      a = input.nextInt();
+      b = input.nextInt();
+      c = input.nextInt();
       if ((a + b) > c && (a + c) > b && (b + c) > a) {
         p = (a + b +c)/2;
         S = Math.sqrt(p*(p - a)*(p - b)*(p - c));
